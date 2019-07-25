@@ -67,7 +67,7 @@ public class ReverseSingleLinkedList {
         /**
          * 递归，在反转当前节点之前先反转后续节点
          */
-        public static Node Reverse1(Node head) {
+        private static Node Reverse1(Node head) {
             // head看作是前一结点，head.getNext()是当前结点，reHead是反转后新链表的头结点
             if (head == null || head.getNext() == null) {
                 // 若为空链或者当前结点在尾结点，则直接还回
